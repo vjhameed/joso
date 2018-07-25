@@ -1,0 +1,98 @@
+@media only screen and (max-width: 768px){
+    .container{
+        padding: 0 12px;
+    }
+    
+    .myrow{
+        margin-bottom: 12px;
+    }
+
+    .small-img-left{
+        width: 100%;
+        height: auto;
+        padding-right: 0;
+        margin-bottom: 12px;
+        float: left;
+    }
+
+    .small-img-right{
+        padding-left: 0;
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+
+    #home-top-section{
+        height: 70vh;
+        /* height: auto; */
+    }
+    .top-flex h1{
+        font-size: 38px;
+        line-height: 38px;
+        letter-spacing: -2px;
+    }
+
+    .text-row{
+        margin: 53px 0;
+    }
+
+    .heading2{
+        font-size: 27px;
+        line-height: 32px;
+        max-width: none;
+        padding: 0 6px;
+        letter-spacing: -1px;
+    }
+
+    .home-text-right:nth-of-type(1){
+        width: 100%;
+        padding-right: 0;
+        margin-left: 0;
+        margin-top: 18px;
+    }
+
+    .caption{
+        font-size: 9px;
+        line-height: 14px;
+    }
+
+    .big-text{
+        width: 100%;
+        float: none;
+        padding-right: 0;
+        font-size: 100%;
+    }
+
+    .big-text p:not(:last-child){
+        margin-bottom: 18px;
+        
+    }
+
+    .small-text{
+        padding-left: 0;
+        padding-top: 53px;
+        margin-left: 0;
+        width:100%;
+        float: none;
+    }
+    
+    #home-pics2-section{
+        margin-bottom: 53px;
+    }
+}
+
+@media only screen and (max-width: 1279px) and (min-width: 769px){
+    .top-flex h1{
+        font-size: 100px;
+        line-height: 100px;
+    }
+
+    .heading2{
+        font-size: 47px;
+        line-height: 57px;
+    }
+
+    .container{
+        padding: 0 8.5vw;
+    }
+}

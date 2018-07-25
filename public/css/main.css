@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'Calibre';
+    src: url('../fonts/Calibre-Regular.ttf') format('truetype');
+  }
+
+html{
+    height: 100%;
+    font-size: 100%;
+}
+
+body{
+    height: 100%;
+    font: 26px/32px "Calibre", sans-serif;
+    text-align: left;
+    background: #fff;
+    color: #111
+}
+
+.container{
+    width: 100%;
+    padding: 0 10.5vw;
+    max-width: 100% !important;
+}
+
+.myrow{
+    width: 100%;
+    margin-bottom: 2vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.big-img{
+    width: 100%;
+    height: auto;
+}
+
+.small-img-left{
+    padding-right: 1vw;
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+.small-img-right{
+    padding-left: 1vw;
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+#home-top-section{
+    height: 100vh;
+    padding: 100px 0 50px 0;
+}
+
+.top-flex{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column;
+}
+
+
+.top-flex h1{
+    font-family: "Circular", sans-serif;
+    font-size: 120px;
+    line-height: 115px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -4px;
+}
+
+.top-flex .caption{
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.text-row{
+    margin: 180px 0;
+}
+
+.heading2{
+    font-size: 66px;
+    line-height: 78px;
+    font-family: "Circular", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    max-width: 65vw;
+    width: 100%;
+    margin: 0 auto;
+    letter-spacing: -4px;
+}
+
+.center-image{
+    /* height: 100vh; */
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2vw;
+    /* width: 1349px;  */
+    /* margin-left: -143.5px; */
+}
+
+.center-image img{
+    /* height: 100vh; */
+    /* position: absolute; */
+    top: -245px;
+    margin: 0 !important;
+}
+
+.center-image p{
+    /* text-align: center; */
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    font-family: "Circular", sans-serif;
+}
+
+#home-pics2-section{
+    margin-bottom: 180px;
+}
+
+.highlighted-text{
+    color: #ff5621;
+    line-height: 20px;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.dark-link{
+    color: #111111;
+    text-decoration: none;
+    border-bottom: 1px solid #111111;
+    transition: all .25s ease-out;
+}
+
+.dark-link:hover{
+    opacity: 0.35;
+    color: #111111;
+    text-decoration: none;
+}
+
+.caption{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 11px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    font-family: "Circular", sans-serif;
+    padding: 1.75vw 0 0 0;
+}
+
+.external-link{
+    color: #111;
+    border-bottom: 1px solid #111111;
+    text-decoration: none;
+}
+
+.external-link:hover{
+    color: #111111;
+    text-decoration: none;
+}
+
+.big-text{
+    width: 50%;
+    float: left;
+    padding-right: 1vw;
+    font-size: 100%;
+}
+
+.big-text p:not(:last-child){
+    margin-bottom: 32px;
+
+}
+
+.small-text{
+    width: 30%;
+    float: left;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 1vw;
+    padding-top: 5px;
+    margin-left: 10%;
+}
+
+.small-text h3{
+    margin: 40px 0 20px;
+    font-size: 100%;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.small-text h3:first-child{
+    margin-top:0;
+}
+
+.small-text p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.small-text2{
+    font-size: 16px;
+    line-height: 20px;
+    width: 20%;
+    padding-right: 1vw;
+    margin-left: 10%;
+    margin-top: 62px;
+    float: left;
+}
+
+.big-text2{
+    padding-left: 1vw;
+    margin-left: 10%;
+    width: 50%;
+    float: left;
+    font-size: 100%;
+}
+
+.small-text2 h3{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    margin:0;
+}
+
+.small-text2 p:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.big-text2 h3{
+    margin: 0 0 26px;
+    font-weight: bold;
+}
+
+.big-text2 p:not(:last-child){
+    margin-bottom: 32px;
+}
