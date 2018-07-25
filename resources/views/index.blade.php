@@ -38,16 +38,16 @@
                     <img class="small-img-right" src="{{asset('img/JoAndSo_MemmoAlfama00-1200x796.jpg')}}" alt="Boutique Hotel Memmo Alfama Bathroom in Lisbon - JO&SO">
             </div>
             <div class="myrow">
-                    <img class="small-img-left" src="./img/IMG_2875-1200x800.jpg" alt="Boutique Hotel Memmo Alfama Living Room in Lisbon - JO&SO">
-                    <img class="small-img-right" src="./img/IMG_3085-1-1200x800.jpg" alt="Alfama Rooftops in Lisbon, the oldest and most picturesque neighbourhood - JO&SO">
+                    <img class="small-img-left" src="{{asset('img/IMG_2875-1200x800.jpg')}}" alt="Boutique Hotel Memmo Alfama Living Room in Lisbon - JO&SO">
+                    <img class="small-img-right" src="{{asset('img/IMG_3085-1-1200x800.jpg')}}" alt="Alfama Rooftops in Lisbon, the oldest and most picturesque neighbourhood - JO&SO">
             </div>
             <div class="myrow">
-                    <img class="small-img-left" src="./img/JoAndSo_MemmoAlfama03-1200x796.jpg" alt="Boutique Hotel Memmo Alfama Bedroom in Lisbon - JO&SO">
-                    <img class="small-img-right" src="./img/JoAndSo_MemmoAlfama28-1200x796.jpg" alt="Boutique Hotel Memmo Alfama Rooftop in Lisbon - JO&SO">
+                    <img class="small-img-left" src="{{asset('img/JoAndSo_MemmoAlfama03-1200x796.jpg')}}" alt="Boutique Hotel Memmo Alfama Bedroom in Lisbon - JO&SO">
+                    <img class="small-img-right" src="{{asset('img/JoAndSo_MemmoAlfama28-1200x796.jpg')}}" alt="Boutique Hotel Memmo Alfama Rooftop in Lisbon - JO&SO">
             </div>
             <div class="myrow">
-                    <img class="small-img-left" src="./img/JoAndSo_MemmoAlfama21-1200x796.jpg" alt="Boutique Hotel Memmo Alfama Bathroom in Lisbon - JO&SO">
-                    <img class="small-img-right" src="./img/JoAndSo_MemmoAlfama38-1200x796.jpg" alt="Boutique Hotel Memmo Alfama Rooftop Pool in Lisbon - JO&SO">
+                    <img class="small-img-left" src="{{asset('img/JoAndSo_MemmoAlfama21-1200x796.jpg')}}" alt="Boutique Hotel Memmo Alfama Bathroom in Lisbon - JO&SO">
+                    <img class="small-img-right" src="{{asset('img/JoAndSo_MemmoAlfama38-1200x796.jpg')}}" alt="Boutique Hotel Memmo Alfama Rooftop Pool in Lisbon - JO&SO">
             </div>
         </div>
     </section>
@@ -93,9 +93,9 @@
     <section id="home-pics2-section">
         <div class="center-image">
             <picture>
-                <source media="(max-width: 768px)" srcset="./img/MG_8065-copy-1200x800.jpg">
-                <source media="(min-width: 769px)" srcset="./img/MG_8065-copy-1800x1200.jpg">
-                <img src="./img/MG_8065-copy-1800x1200.jpg" alt="Alfama Rooftops in Lisbon, the oldest and most picturesque neighbourhood - JO&SO"
+                <source media="(max-width: 768px)" srcset="{{asset('img/MG_8065-copy-1200x800.jpg')}}">
+                <source media="(min-width: 769px)" srcset="{{asset('img/MG_8065-copy-1800x1200.jpg')}}">
+                <img src="{{asset('img/MG_8065-copy-1800x1200.jpg')}}" alt="Alfama Rooftops in Lisbon, the oldest and most picturesque neighbourhood - JO&SO"
                     class="w-100">
             </picture>
             <p>Memmo offers glorious views over Alfama's famous rooftops.</p>
@@ -103,16 +103,16 @@
 
         <div class="container">
             <div class="myrow">
-                    <img class="small-img-left" src="img/JoAndSo_MemmoAlfama29-1200x796.jpg" alt="Boutique Hotel Memmo Alfama Living Room in Lisbon - JO&SO">
-                    <img class="small-img-right" src="img/JoAndSo_MemmoAlfama30-1200x796.jpg" alt="Boutique Hotel Memmo Alfama Living Room in Lisbon - JO&SO">
+                    <img class="small-img-left" src="{{asset('img/JoAndSo_MemmoAlfama29-1200x796.jpg')}}" alt="Boutique Hotel Memmo Alfama Living Room in Lisbon - JO&SO">
+                    <img class="small-img-right" src="{{asset('img/JoAndSo_MemmoAlfama30-1200x796.jpg')}}" alt="Boutique Hotel Memmo Alfama Living Room in Lisbon - JO&SO">
             </div>
             <div class="myrow">
-                    <img class="small-img-left" src="img/JoAndSo_MemmoAlfama35-1200x796.jpg" alt="Boutique Hotel Memmo Alfama Deco Details in Lisbon - JO&SO">
-                    <img class="small-img-right" src="img/JoAndSo_MemmoAlfama36-1200x796.jpg" alt="Boutique Hotel Memmo Alfama Rooftop Pool in Lisbon - JO&SO">
+                    <img class="small-img-left" src="{{asset('img/JoAndSo_MemmoAlfama35-1200x796.jpg')}}" alt="Boutique Hotel Memmo Alfama Deco Details in Lisbon - JO&SO">
+                    <img class="small-img-right" src="{{asset('img/JoAndSo_MemmoAlfama36-1200x796.jpg')}}" alt="Boutique Hotel Memmo Alfama Rooftop Pool in Lisbon - JO&SO">
             </div>
             <div class="myrow">
-                    <img class="small-img-left" src="img/MG_2888-1200x800.jpg" alt="Boutique Hotel Memmo Alfama Library Deco Details in Lisbon - JO&SO">
-                    <img class="small-img-right" src="img/JoAndSo_MemmoAlfama16-1200x796.jpg" alt="Boutique Hotel Memmo Alfama Library Deco Details in Lisbon - JO&SO">
+                    <img class="small-img-left" src="{{asset('img/MG_2888-1200x800.jpg')}}" alt="Boutique Hotel Memmo Alfama Library Deco Details in Lisbon - JO&SO">
+                    <img class="small-img-right" src="{{asset('img/JoAndSo_MemmoAlfama16-1200x796.jpg')}}" alt="Boutique Hotel Memmo Alfama Library Deco Details in Lisbon - JO&SO">
             </div>
         </div>
     </section>
@@ -120,9 +120,9 @@
     <section id="home-features2-section">
         <div class="center-image">
             <picture>
-                <source media="(max-width: 768px)" srcset="./img/IMG_3066-copy-1200x800.jpg">
-                <source media="(min-width: 769px)" srcset="./img/IMG_3066-copy-1800x1200.jpg">
-                <img src="./img/IMG_3066-copy-1800x1200.jpg" alt="Alfama Rooftops in Lisbon, the oldest and most picturesque neighbourhood - JO&SO"
+                <source media="(max-width: 768px)" srcset="{{asset('img/IMG_3066-copy-1200x800.jpg')}}">
+                <source media="(min-width: 769px)" srcset="{{asset('img/IMG_3066-copy-1800x1200.jpg')}}">
+                <img src="{{asset('img/IMG_3066-copy-1800x1200.jpg')}}" alt="Alfama Rooftops in Lisbon, the oldest and most picturesque neighbourhood - JO&SO"
                     class="w-100">
             </picture>
             <p>Alfama is Lisbon's oldest and most picturesque neighbourhood.</p>
@@ -172,20 +172,20 @@
         <div class="container">
 
             <div class="myrow">
-                    <img class="small-img-left" src="./img/IMG_3092-1-1200x800.jpg" alt="Alfama streets in Lisbon, the oldest and most picturesque neighbourhood - JO&SO">
-                    <img class="small-img-left" src="./img/MG_3100-1200x800.jpg" alt="Alfama tiles in Lisbon, the oldest and most picturesque neighbourhood - JO&SO">
+                    <img class="small-img-left" src="{{asset('img/IMG_3092-1-1200x800.jpg')}}" alt="Alfama streets in Lisbon, the oldest and most picturesque neighbourhood - JO&SO">
+                    <img class="small-img-left" src="{{asset('img/MG_3100-1200x800.jpg')}}" alt="Alfama tiles in Lisbon, the oldest and most picturesque neighbourhood - JO&SO">
             </div>
             <div class="myrow">
-                    <img class="small-img-left" src="./img/MG_3098-1200x800.jpg" alt="Alfama street signs in Lisbon, the oldest and most picturesque neighbourhood - JO&SO">
-                    <img class="small-img-right" src="./img/MG_3073-1200x800.jpg" alt="Alfama street Bust in Lisbon, the oldest and most picturesque neighbourhood - JO&SO">
+                    <img class="small-img-left" src="{{asset('img/MG_3098-1200x800.jpg')}}" alt="Alfama street signs in Lisbon, the oldest and most picturesque neighbourhood - JO&SO">
+                    <img class="small-img-right" src="{{asset('img/MG_3073-1200x800.jpg')}}" alt="Alfama street Bust in Lisbon, the oldest and most picturesque neighbourhood - JO&SO">
             </div>
             <div class="myrow">
-                    <img class="small-img-left" src="./img/IMG_3093-1200x800.jpg" alt="Alfama streets in Lisbon, the oldest and most picturesque neighbourhood - JO&SO">
-                    <img class="small-img-right" src="./img/IMG_3091-1200x800.jpg" alt="Alfama Christopher Columbus Statue in Lisbon, the oldest and most picturesque neighbourhood - JO&SO">
+                    <img class="small-img-left" src="{{asset('img/IMG_3093-1200x800.jpg')}}" alt="Alfama streets in Lisbon, the oldest and most picturesque neighbourhood - JO&SO">
+                    <img class="small-img-right" src="{{asset('img/IMG_3091-1200x800.jpg')}}" alt="Alfama Christopher Columbus Statue in Lisbon, the oldest and most picturesque neighbourhood - JO&SO">
             </div>
             <div class="myrow">
-                    <img class="small-img-left" src="./img/MG_3061-1200x800.jpg" alt="Alfama in Lisbon the oldest and most picturesque neighbourhood - JO&SO">
-                    <img class="small-img-right" src="./img/MG_3114-1200x800.jpg" alt="Alfama streets in Lisbon the oldest and most picturesque neighbourhood - JO&SO">
+                    <img class="small-img-left" src="{{asset('img/MG_3061-1200x800.jpg')}}" alt="Alfama in Lisbon the oldest and most picturesque neighbourhood - JO&SO">
+                    <img class="small-img-right" src="{{asset('img/MG_3114-1200x800.jpg')}}" alt="Alfama streets in Lisbon the oldest and most picturesque neighbourhood - JO&SO">
             </div>
             <div class="row">
                 <div class="col">
@@ -194,12 +194,12 @@
             </div>
 
             <div class="myrow">
-                    <img class="small-img-left" src="./img/MG_2947-1200x800.jpg" alt="Baiuca Fado Restaurant in Alfama the oldest and most picturesque neighbourhood in Lisbon - JO&SO">
-                    <img class="small-img-right" src="./img/MG_2960-1200x800.jpg" alt="Baiuca Fado Restaurant in Alfama the oldest and most picturesque neighbourhood in Lisbon - JO&SO">
+                    <img class="small-img-left" src="{{asset('img/MG_2947-1200x800.jpg')}}" alt="Baiuca Fado Restaurant in Alfama the oldest and most picturesque neighbourhood in Lisbon - JO&SO">
+                    <img class="small-img-right" src="{{asset('img/MG_2960-1200x800.jpg')}}" alt="Baiuca Fado Restaurant in Alfama the oldest and most picturesque neighbourhood in Lisbon - JO&SO">
             </div>
             <div class="myrow">
-                    <img class="small-img-left" src="./img/IMG_3015-1200x800.jpg" alt="Baiuca Fado Restaurant in Alfama the oldest and most picturesque neighbourhood in Lisbon - JO&SO">
-                    <img class="small-img-right" src="./img/IMG_2994-1200x800.jpg" alt="Baiuca Fado Restaurant in Alfama the oldest and most picturesque neighbourhood in Lisbon - JO&SO">
+                    <img class="small-img-left" src="{{asset('img/IMG_3015-1200x800.jpg')}}" alt="Baiuca Fado Restaurant in Alfama the oldest and most picturesque neighbourhood in Lisbon - JO&SO">
+                    <img class="small-img-right" src="{{asset('img/IMG_2994-1200x800.jpg')}}" alt="Baiuca Fado Restaurant in Alfama the oldest and most picturesque neighbourhood in Lisbon - JO&SO">
             </div>
             <div class="row">
                     <div class="col">
