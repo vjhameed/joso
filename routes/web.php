@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+Route::get('/detail', function () {
+    return view('detail');
 });
+
+Route::get('/', 'homeController@index');
+
+Route::post('/fetch', 'homeController@fetchListings');

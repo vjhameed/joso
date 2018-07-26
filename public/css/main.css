@@ -3,6 +3,11 @@
     src: url('../fonts/Calibre-Regular.ttf') format('truetype');
   }
 
+@font-face{
+    font-family: 'Circular';
+    src: url('../fonts/CircularStd-Book.otf');    
+}
+
 html{
     height: 100%;
     font-size: 100%;
@@ -74,6 +79,18 @@ body{
 .top-flex .caption{
     font-size: 10px;
     line-height: 15px;
+    text-align: center;
+}
+
+.center-image .caption{
+    margin: 0 auto 1.75vw;
+}
+
+#home-toppics-section2 .caption{
+    margin: 0 auto 1.75vw;
+    padding: 1.75vw 0 0 0;
+    width: 60%;
+    clear: both;
 }
 
 .text-row{
@@ -153,7 +170,6 @@ body{
     line-height: 17px;
     letter-spacing: 1px;
     font-family: "Circular", sans-serif;
-    padding: 1.75vw 0 0 0;
 }
 
 .external-link{
@@ -240,4 +256,346 @@ body{
 
 .big-text2 p:not(:last-child){
     margin-bottom: 32px;
+}
+
+#home-toppics-section2, #home-interview-section{
+    margin-bottom: 180px;
+}
+
+.small-text3{
+    font-size: 16px;
+    line-height: 20px;
+    padding-right: 1vw;
+    width: 30%;
+    float: left;
+
+}
+
+.big-text3{
+    padding-left: 1vw;
+    margin-left: 10%;
+    width: 50%;
+    float: left;
+    font-size: 100%;
+
+}
+
+.img-box:not(:last-child) {
+    margin-bottom: 65px;
+    width: 100%;
+
+}
+
+.img-box img{
+    width: 100%;
+    height: auto;
+}
+
+.img-box .content{
+    margin-top: 1.75vw;
+    text-align: center;
+}
+
+.content h3{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.big-text3 h3{
+    margin: 55px 0 26px;
+    font-weight: bold;
+}
+
+.big-text3 h3:first-child{
+    margin-top:0;
+}
+
+#home-contact-section{
+    margin-bottom: 180px;
+}
+
+.sharerow{
+    margin-top: 70px;
+}
+
+.sharehead{
+    width: 160px;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 0;
+    line-height: 0;
+    margin-bottom: 50px;
+}
+
+.socialbuttons{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.socialbuttons:hover, .socialbuttons:active{
+    background-color: #111111;
+}
+
+.email{
+    background: #ee9999 url('../img/email.svg') center center no-repeat
+}
+
+.pinterest{
+    background: #d40000 url('../img/pinterest.svg') center center no-repeat;
+}
+
+.twitter{
+    background: #4ec2f6 url('../img/twitter.svg') center center no-repeat;
+}
+
+.facebook{
+    background: #0c46a0 url('../img/facebook.svg') center center no-repeat;
+}
+
+.contact-small-left{
+    padding-right: 1vw;
+    margin-left: 20%;
+    margin-top: -2px;
+    width: 30%;
+    float: left;
+    font-size: 27px;
+    line-height: 33px;
+    letter-spacing: -1px;
+    font-family: "Circular", sans-serif;
+    font-weight: bold;
+}
+
+.contact-small-left a{
+    display: block;
+    color: #ff5621;
+}
+
+.contact-small-left a:last-of-type{
+    color: #111111;
+}
+
+
+.contact-small-left a:hover, .contact-small-left a:active{
+    opacity: 0.35;
+    text-decoration: none;
+}
+
+.contact-small-right{
+    padding-left: 1vw;
+    width: 30%;
+    float: left;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.contact-small-right h3{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.contact-small-right p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+#home-tp-section{
+    background: #ededed;
+    width: 100%;
+    padding: 180px 0;
+    position: relative;
+}
+
+.tag-cloud{
+    width: 40%;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+
+.tag-cloud a{
+    display: inline-block;
+    padding: 3px 8px 4px;
+    margin: 0 12px 12px 0;
+    background: #fff;
+    vertical-align: baseline;
+    transition: all .25s ease-out;
+    color: #111111;
+}
+
+.tag-cloud a:hover{
+    background: #ee524f;
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+}
+
+.tag-cloud h4{
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: bold;
+    font-family: "Circular", sans-serif;
+}
+
+.more-places{
+    margin-top: 75px;
+}
+
+.more-places h4{
+    margin-bottom: -9px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: bold;
+    font-family: "Circular", sans-serif;
+}
+
+.view-all{
+    color: #111111;
+    transition: all .25s ease-out;
+    margin: -5px 0 30px;
+    display: inline-block;
+}
+
+.view-all:hover{
+    text-decoration: none;
+    color: #111111;
+    opacity: 0.35;
+}
+
+.thumbs-container{
+    width: calc(100% + 2vw);
+    margin: 0 0 -2vw -1vw;
+    overflow: hidden;
+}
+
+.thumb{
+    cursor: pointer;
+    width: 20%;
+    padding: 0 1vw;
+    margin-bottom: 2vw;
+    float: left;
+}
+
+.thumb-mask{
+    transition: box-shadow .3s ease-in-out;
+    padding-bottom: 150%;
+    background: #fff;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.thumb-mask img{
+    width: 100%;
+    height: auto;
+}
+
+.thumb-mask h3{
+    padding: 15px 20% 15px 10px;
+    line-height: 29px;
+    font-size: 27px;
+    letter-spacing: -1px;
+    text-align: left;
+    color: #111111;
+    font-family: "Circular", sans-serif;
+}
+
+.thumb-mask .caption{
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    text-align: left;
+}
+
+.deal{
+    color: #ff5621;
+}
+
+#home-newsletter-section{
+    background: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 180px 0;
+    position: relative;
+
+}
+
+
+.thumb-mask:hover{
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.15);
+    transition: box-shadow .15s ease-in-out;
+}
+
+.news-content{
+    width: 100%;
+    position: relative;
+    padding: 0 10.5vw;
+    margin: 0 auto;
+}
+
+#news-input{
+    border:none;
+    width: 180px;
+    height: 38px;
+    line-height: 38px;
+    background: transparent;
+    text-align: left;
+    color: #111;
+    border-bottom: 1px solid #111;
+    margin-top: 30px;
+    transition: width .4s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    box-shadow: none;
+    padding:0;
+}
+
+#news-input:focus{
+    width: 380px;
+    outline:none;
+}
+
+.sharer{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 34px;
+    right: 34px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: height .3s cubic-bezier(0.645, 0.045, 0.355, 1.000), opacity .4s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.sharer:hover{
+    height: 200px;
+}
+
+.share-toggle{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: #202020 url("../img/sharer.svg") center center no-repeat;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.sharer:hover .share-toggle{
+    background: #fff url("../img/sharer-black.svg") center center no-repeat;
+}
+
+.share-buttons{
+    width: 40px;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.share-buttons .socialbuttons{
+    display: block;
 }
