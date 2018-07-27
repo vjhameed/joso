@@ -122,11 +122,15 @@
                 <div class="col-md-12 h-listing mb-5 place-row">
                         <div class="row">
                             <div class="p-0  sixty-box">
-                                <img src="{{asset('img/'.$hotel->image)}}" class='img img-responsive' alt="">
+                                <a href="/detail">
+                                    <img src="{{asset('img/'.$hotel->image)}}" class='img img-responsive' alt="">
+                                </a>
                             </div>
                             <div class=" forty-box">
+                            <a href="/detail">
                                 <h4 class='headline'>{{$hotel->name}}</h4>
                                 <p>{{$hotel->description}}</p>
+                            </a>    
                             </div>
                        </div>
                 </div>            
@@ -136,11 +140,15 @@
                 <div class="col-md-12 h-listing mb-5 place-row listing-clone d-none">
                         <div class="row">
                             <div class="p-0  sixty-box">
-                                <img src="{{asset('img/')}}" class='img img-responsive' alt="">
+                                <a href="/detail">
+                                    <img src="{{asset('img/')}}" class='img img-responsive' alt="">
+                                </a>    
                             </div>
                             <div class=" forty-box">
-                                <h4 class='headline'>{{$hotel->name}}</h4>
-                                <p>{{$hotel->description}}</p>
+                                <a href="/detail">
+                                    <h4 class='headline'>{{$hotel->name}}</h4>
+                                    <p>{{$hotel->description}}</p>
+                                </a>
                             </div>
                        </div>
                 </div>            
