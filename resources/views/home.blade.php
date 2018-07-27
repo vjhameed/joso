@@ -16,6 +16,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
     <style>
+
+        @font-face {
+            font-family: 'Calibre';
+            src: url('{{asset("fonts/Calibre-Regular.ttf")}}') format('truetype');
+        }
+
+        @font-face{
+            font-family: 'Circular';
+            src: url('{{asset("fonts/CircularStd-Book.otf")}}');    
+        }
+
         .back-to-top {
             cursor: pointer;
             position: fixed;
@@ -48,7 +59,8 @@
             line-height: 26px;
             margin-bottom: 26px;
             max-height: 240px;
-            overflow: hidden
+            overflow: hidden;
+            font-family:'Calibre'
         }
 
         a {
@@ -74,18 +86,20 @@
             width: 60%;
             float: left;
             overflow: hidden;
+            background:white
         }
 
         .headline {
-            font-size: 55px;
+            font-size: 50px;
             line-height: 52px;
             padding-bottom: 28px;
+            font-family: 'Circular'
         }
 
         .place-row {
-            height: 368px;
             overflow: hidden;
-            transition: 0.4s all ease
+            transition: 0.4s all ease;
+            height:auto
         }
 
         .place-row:hover {
@@ -101,7 +115,14 @@
             color: blue;
         }
 
+        .h-listing{
+            margin-bottom:3vw
+        }
+
         @media(max-width:768px) {
+        .h-listing{
+            margin-bottom:12px
+        }
             .forty-box,
             .sixty-box {
                 width: 100%
@@ -112,7 +133,28 @@
 
             .forty-box {
                 height: 375px;
-                position: static
+                position: static;
+                padding:27px 12px 51px
+            }
+            .centered{
+                padding:20px 12px
+            }
+            .headline{
+                font-size:27px;
+                line-height:32px;
+                letter-spacing:-1px;
+                padding:0 0 10px 0
+            }
+            .forty-box p{
+                font-size:19px;
+                line-height:24px;
+                
+            }
+        }
+
+        @media (min-width:769px) and(max-width:1279px){
+            .centered{
+                padding:20px 8.5vw
             }
         }
 
@@ -125,9 +167,9 @@
 
     <div class='centered grey listing-container'>
 
-        <div class="row">
+        <div class="row mx-0">
             @foreach ($hotels as $hotel)
-            <div class="col-md-12 h-listing mb-5 place-row">
+            <div class="col-md-12 h-listing place-row">
                 <div class="row">
                     <div class="p-0  sixty-box">
                         <a href="/detail">
