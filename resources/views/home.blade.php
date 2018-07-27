@@ -14,30 +14,35 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <style>
     .back-to-top {
-    cursor: pointer;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display:none;
-    border-radius:50%
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display:none;
+        border-radius:50%
+    }
+    .centered {
+        width: 100%;
+        position: relative;
+        padding: 0 10.5vw;
+        margin: 0 auto;
+        padding-top:10em
     }
     body{
-        color:black
-    }
-    .h-listing .row{
-        border-radius:5px;
-        border:1px solid darkgray;
-        overflow:hidden;
-        height:198px
+        color:black;
+        background-color:#ededed
     }
 
     .h-listing img{
         width:100%;
-        height:196px
+        height:100%;
     }
 
-    .h-listing p{
-        max-height:143px;
+    .forty-box p{
+        font-size: 21px;
+        line-height: 26px;
+        margin-bottom: 26px;
+        max-height:240px;
         overflow:hidden
     }
 
@@ -49,46 +54,91 @@
         color:black;
         text-decoration:none
     }
+
+    .forty-box{
+        width: 40%;
+        height: 100%;
+        padding: 43px 49px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #fff;        
+    }
+
+    .sixty-box{
+        width: 60%;
+        float: left;
+        overflow: hidden;
+    }
+
+    .headline{
+        font-size: 55px;
+        line-height: 52px;
+        padding-bottom: 28px;
+    }
+
+    .place-row{
+        height:368px;
+        overflow:hidden;
+        transition:0.4s all ease
+    }
+
+    .place-row:hover{
+        box-shadow:0px 3px 10px 0px rgba(0,0,0,0.15)
+    }
+
+    .place-row .row{
+        height:100%
+    }
+
+    @media(max-width:768px){
+        .forty-box,.sixty-box{
+            width:100%
+        }
+        .place-row{
+            height:auto
+        }
+
+        .forty-box{
+            height:375px;
+            position:static
+        }
+    }
     </style>
 
   </head>
   <body>
 
 
-    <div class='container my-5 py-5 listing-container'>
+    <div class='centered grey listing-container'>
 
         <div class="row">        
             @foreach ($hotels as $hotel)
-                <div class="col-md-6 h-listing mb-5">
-                    <a href="/detail">
-                        <div class="row mx-0">
-                            <div class="col-md-6 p-0">
+                <div class="col-md-12 h-listing mb-5 place-row">
+                        <div class="row">
+                            <div class="p-0  sixty-box">
                                 <img src="{{asset('img/'.$hotel->image)}}" class='img img-responsive' alt="">
                             </div>
-                            <div class="col-md-6 pt-3">
-                                <h4>{{$hotel->name}}</h4>
+                            <div class=" forty-box">
+                                <h4 class='headline'>{{$hotel->name}}</h4>
                                 <p>{{$hotel->description}}</p>
                             </div>
                        </div>
-                    </a>
                 </div>            
             @endforeach
         </div>
 
-            <div class="col-md-6 h-listing listing-clone d-none mb-5" >
-                <a href="/detail">
-                    <div class="row mx-0">
-                        <div class="col-md-6 p-0">
-                            <img src="{{asset('img/')}}" alt="">
-                        </div>
-                        <div class="col-md-6 pt-3">
-                            <h4></h4>
-                            <p></p>
-                        </div>
-                    </div>
-                </a>
-           </div>            
-
+                <div class="col-md-12 h-listing mb-5 place-row listing-clone d-none">
+                        <div class="row">
+                            <div class="p-0  sixty-box">
+                                <img src="{{asset('img/')}}" class='img img-responsive' alt="">
+                            </div>
+                            <div class=" forty-box">
+                                <h4 class='headline'>{{$hotel->name}}</h4>
+                                <p>{{$hotel->description}}</p>
+                            </div>
+                       </div>
+                </div>            
 
     </div>
 
@@ -115,7 +165,7 @@ $(document).ready(function () {
 
     var listing_limit = 9; 
     window.onscroll = function(ev) {
-        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 700) {
             if(isfetching == false){
             requestListings()
             }
