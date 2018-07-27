@@ -181,13 +181,29 @@ $(document).ready(function () {
     var isfetching = false;
 
     var listing_limit = 9; 
-    window.onscroll = function(ev) {
-        if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 700) {
-                if(isfetching == false){
+    window.onscroll = function(e) {
+        var _windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight,
+            _scrollPos = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+    
+        if ((_windowHeight + _scrollPos) >= document.body.offsetHeight) {
+                            if(isfetching == false){
                 requestListings()
             }
         }
     };
+
+ //   $(window).scroll(function() {
+//    if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+        //    if(isfetching == false){
+      //          requestListings()
+    //        }      
+  //  }
+//    });
+
+//    window.onscroll = function(ev) {
+  //      if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 700) {
+   //     }
+  //  };
 
 
         $(window).scroll(function () {
