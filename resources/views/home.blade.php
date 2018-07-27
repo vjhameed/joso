@@ -91,6 +91,11 @@
         height:100%
     }
 
+    .fa-spinner{
+        font-size: 4em;
+        color: blue;
+    }
+
     @media(max-width:768px){
         .forty-box,.sixty-box{
             width:100%
@@ -140,6 +145,10 @@
                        </div>
                 </div>            
 
+                <div class='d-flex p-5 text-center justify-content-center'>
+                    <i class='fa fa-spin fa-spinner d-none' aria-hidden="true"></i>
+                </div>
+
     </div>
 
 
@@ -167,7 +176,7 @@ $(document).ready(function () {
     window.onscroll = function(ev) {
         if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 700) {
             if(isfetching == false){
-            requestListings()
+                requestListings()
             }
         }
     };
@@ -202,6 +211,7 @@ $(document).ready(function () {
         var fd = new FormData(this);        
         fd.append('limit', listing_limit)
 
+        $('.fa-spinner').removeClass('d-none')
         request = $.ajax({
             method: "post",
             url: url,
@@ -213,6 +223,7 @@ $(document).ready(function () {
 
 
         request.done(function (response) {
+                $('.fa-spinner').addClass('d-none')
                 if (response) {
                     for (let index = 0; index < response.length; index++) {
                         let newlisting = $('.listing-clone').clone();
