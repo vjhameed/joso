@@ -182,8 +182,8 @@ $(document).ready(function () {
 
     var listing_limit = 9; 
     window.onscroll = function(ev) {
-        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 700) {
-            if(isfetching == false){
+        if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 700) {
+                if(isfetching == false){
                 requestListings()
             }
         }
