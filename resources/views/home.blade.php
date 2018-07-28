@@ -247,19 +247,6 @@
                         }
                     };
 
-//                    $(window).scroll(function () {
-                        //    if ($(window).scrollTop() == $(document).height() - $(window).height()) {
-                        //    if(isfetching == false){
-                        //          requestListings()
-                        //        }      
-                        //  }
-                        //    });
-
-                        //    window.onscroll = function(ev) {
-                        //      if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 700) {
-                        //     }
-                        //  };
-
 
                         $(window).scroll(function () {
                             if ($(this).scrollTop() > 50) {
@@ -287,17 +274,12 @@
                         function requestListings() {
                             isfetching = true;
                             url = '/fetch';
-                            var fd = new FormData(this);
-                            fd.append('limit', listing_limit)
-
+                            var fd = 
                             $('.fa-spinner').removeClass('d-none')
                             request = $.ajax({
                                 method: "post",
                                 url: url,
-                                data: fd,
-                                cache: false,
-                                processData: false,
-                                contentType: false,
+                                data: {limit:listing_limit},
                             });
 
 
