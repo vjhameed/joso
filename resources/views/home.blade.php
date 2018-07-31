@@ -274,7 +274,6 @@
                         function requestListings() {
                             isfetching = true;
                             url = '/fetch';
-                            var fd = 
                             $('.fa-spinner').removeClass('d-none')
                             request = $.ajax({
                                 method: "post",
